@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Minun ensimmäinen nettisivuni
+  </title>
+</head>
+
+<body>
+  <main>
+    <header>Tämä tässä on ylätunniste</header>
+    <h1>Lindfors</h2>
+      <h2>Anita
+    </h1>
+    <p>Olen klaukkalalainen.</p>
+
+    <img src="kissa.png" alt="harmaa kissa" width="104" height="142"> <br>
+
+      <button onclick="tulostaViesti()">Paina tästä</button> <br><br>
+    <h2>API-datan noutaminen</h2>
+    <button id="haeNappi">Kysyppä neuvo</button> 
+    <p id="tulosTeksti">Vastaus ilmestyy tähän...</p> <br>
+
+
+  <h2>🌤️ Sää Open‑Meteosta</h2>
+
+  <label for="cityInput">Paikkakunta</label>
+ <div style="position: relative;">
+  <input id="cityInput" type="text" placeholder="Esim. Helsinki" autocomplete="off">
+  <ul id="suggestions"></ul>
+</div>
+
+  <div id="error"></div>
+
+  <div id="weather">
+    <p><strong>Paikkakunta:</strong> <span id="locationName"></span></p>
+    <p><strong>Lämpötila:</strong> <span id="temperature"></span></p>
+    <p><strong>Tuuli:</strong> <span id="wind"></span></p>
+    <p><strong>Kosteus:</strong> <span id="humidity"></span></p>
+
+  </div>
+
+
+
+    <h2>Juomia</h2>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <h2>Juomia numeroituna</h2>
+
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <h2>Kilpailevia ammattikorkeakouluja</h2>
+    <nav>
+      <div class="korttiryhma">
+      <ul>
+        <li><a href="https://www.haaga-helia.fi/fi">Haaga-helia ammattikorkeakoulu</a></li>
+        <li><a href="https://www.laurea.fi/">Laurea ammattikorkeakoulu</a></li>
+        <li><a href="https://www.turkuamk.fi/">Turun ammattikorkeakoulu</a></li>
+      </ul>
+      </div>
+    </nav>
+
+
+    <p>Kokeilepa hienoa linkkiä, joka aukeaa omaan välilehteen! Nämä onkin harvinaisia:</p>
+    <a href="https://www.vamk.fi/" target="_blank">VAMKin nettisivu</a>
+
+    <div class="kortti">
+      <p>Asun omakotitalossa.</p>
+
+      <p>Eipä minulla ole nyt muuta kerrottavaa. Moikka!</p>
+    </div>
+
+    <footer>Tämä tässä on alatunniste, ja tässä voisi olla mun yhteystiedot. Ja tässä ne onkin:
+      <a href="contact.html">Anitan yhteystiedot</a>
+    </footer>
+  </main>
+
+  <!-- Tämä rivi kytkee JavaScriptin sivuun: --> 
+<script src="script.js"></script> 
+
+
+</body>
+
+</html>
+

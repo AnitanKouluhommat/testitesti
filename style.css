@@ -1,0 +1,88 @@
+*  {
+    box-sizing: border-box;
+} 
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #222222;
+
+    background-color: #f9f9fb;
+
+}
+
+
+main {
+    max-width: 800px;
+    margin: 25px auto;
+    background-color: #ecd7e4;
+    padding: 30px;
+    border-radius: 8px; /* pehmeät kulmat */
+}
+
+
+/*tässä alla muutetaan H1 ja H2 tyyliä */
+h1, h2 {
+
+    color: #0b3c5d;
+   
+
+}
+
+.kortti {
+    width: 300;
+    padding: 10px;
+    border: 2px;
+    margin: 25px auto;
+    background-color: rgb(215, 229, 240);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;  /* luettelopallukat veks */
+    gap: 15px;
+    padding: 0;
+
+}
+
+/* näyttö kapeampi kuin 768px */
+@media (max-width: 768px) {
+ nav .korttiryhma ul {
+        flex-direction: column;  /* kääntää laatikot allekkain */
+    }
+}
+
+/* Hover-efekti */
+ol li:hover {
+  background: #c6eb6f;     /* korostusväri */
+  transform: translateX(5px); /* kevyt liike oikealle */
+}
+
+#suggestions {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 2px;
+  padding: 0;
+  list-style: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+#suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+#suggestions li:last-child {
+  border-bottom: none;
+}
+
+#suggestions li:hover {
+  background: #f5f5f5;
+}
